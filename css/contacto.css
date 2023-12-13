@@ -1,0 +1,154 @@
+.main-section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+main {
+    display: grid;
+    width: 100%;
+    height: calc(100vh - var(--height-header));
+    align-items: center;
+}
+
+
+.formulario {
+    width: 80%;
+    padding: 10px;
+    margin: 20px 10px;
+    border-radius: 10px;
+    justify-self: center;
+    transition: box-shadow 0.5s ease;
+}
+
+.formulario:hover {
+    box-shadow: 1px 1px 2em black;
+    border-radius: 10px;
+}
+
+.formulario h2 {
+    padding: 10px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form input {
+    font-size: xx-large;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form #button {
+    width: 40%;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: xx-large;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    align-self: center;
+    transition: width 0.5s ease;
+}
+
+
+form #button:hover {
+    width: 100%;
+}
+
+aside {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    background-color: black;
+}
+
+table {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    justify-self: center;
+    font-size: x-large;
+    color: white;
+}
+
+
+table * {
+    padding: 10px 10px;
+}
+
+tbody {
+    transition: box-shadow 0.5s ease;
+    border-radius: 10px;
+}
+
+tbody:hover {
+    border-radius: 10px;
+    box-shadow: 2px 2px 2em white;
+}
+
+@media screen and (max-width:1300px) {
+    .main-section-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        padding: 40px 0px;
+        height: 50vh;
+    }
+
+    aside table{
+        width: 90%;
+    }
+
+    footer {
+        border-top: 1px solid white;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .formulario {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    form input {
+        font-size: small;
+    }
+
+    form #button{
+        font-size: small;
+    }
+
+    table{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width:300px){
+    table{
+        font-size: x-small;
+    }
+
+    form input{
+        font-size: small;
+    }
+
+    form #button{
+        font-size: small;
+    }
+    
+}

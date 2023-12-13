@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Vina+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --height-header: 100px;
+}
+
+.body-container {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: var(--height-header);
+  padding: 10px 0px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  align-items: center;
+  color: black;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
+.body-container {
+  width: 100%;
+}
+
+header a img {
+  width: 35%;
+  margin: 0px 20px;
+}
+
+nav {
+  width: 100%;
+  font-size: x-large;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding: 10px 50px;
+  border-bottom: 1px solid #ffffff;
+  transition: border-bottom 0.5s ease-in-out;
+}
+
+nav ul li:hover {
+  border-bottom: 1px solid black;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  width: 20px;
+  height: 20px;
+  padding: 10px 0px;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  margin-top: var(--height-header);
+}
+
+.carousel {
+  width: 100%;
+  height: calc(100vh - var(--height-header));
+  display: flex;
+}
+
+.carousel img {
+  width: 100%;
+}
+
+footer {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  justify-items: center;
+  height: 100%;
+  font-size: x-large;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.informacion-footer {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 5px;
+}
+
+.informacion-footer a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 0px;
+}
+
+.informacion-footer a:hover {
+  text-decoration: underline;
+}
+
+footer .iconos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+
+footer svg {
+  width: 40px;
+  margin-left: 10px;
+  transition: background-color 0.5s ease;
+  transition: padding 0.5s ease;
+}
+
+.instagram svg:hover {
+  padding: 10px;
+  background-color: #800080;
+  border-radius: 10px;
+}
+
+.twitter svg:hover {
+  padding: 10px;
+  background-color: #0a95f1f5;
+  border-radius: 10px;
+}
+
+.facebook svg:hover {
+  padding: 10px;
+  background-color: #0a2df1f5;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+  header a img {
+    width: 80%;
+    margin: 0px 20px;
+  }
+
+  .carousel {
+    width: 100%;
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header a img {
+    width: 80%;
+    margin: 0px 20px;
+  }
+
+  header nav {
+    font-size: smaller;
+  }
+
+  header nav ul li {
+    padding: 10px 10px;
+  }
+
+  .carousel {
+    width: 100%;
+    height: 300px;
+  }
+
+  .informacion-footer {
+    font-size: smaller;
+    margin: 5px 5px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header a img {
+    width: 160%;
+    margin: 0px 10px;
+  }
+
+  header nav {
+    font-size: small;
+  }
+
+  header nav ul li {
+    padding: 10px 5px;
+  }
+
+  .carousel {
+    width: 100%;
+    height: 200px;
+  }
+
+
+  .informacion-footer {
+    margin-left: 10px;
+    font-size: xx-small;
+  }
+
+  footer .iconos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    padding: 10px 10px;
+  }
+
+  footer svg {
+    width: 20px;
+    margin-right: 10px;
+  }
+}
